@@ -1,0 +1,54 @@
+{
+  "window": {
+    "navigationBarTitleText": "疫情",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTextStyle": "black"
+  },
+  "pages": [
+    "pages/DailyReport/DailyReport",
+    "pages/permission/permission",
+    "pages/PersonalCenter/PersonalCenter",
+    "pages/QRcode/QRcode",
+    "pages/SetAlarm/SetAlarm",
+    "pages/signup/signup",
+    "pages/MyInfo/MyInfo",
+    "pages/map/index"
+  ],
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/DailyReport/DailyReport",
+        "text": "健康打卡",
+        "iconPath": "/static/img/tabbar/daka_nor.png",
+        "selectedIconPath": "/static/img/tabbar/daka_sel.png"
+      },
+      {
+        "pagePath": "pages/PersonalCenter/PersonalCenter",
+        "text": "个人中心",
+        "iconPath": "/static/img/tabbar/center_nor.png",
+        "selectedIconPath": "/static/img/tabbar/center_sel.png"
+      },
+      {
+        "pagePath": "pages/map/index",
+        "text": "查看疫情数据",
+        "iconPath": "/static/img/tabbar/_search.png",
+        "selectedIconPath": "/static/img/tabbar/search.png"
+      }
+    ]
+  },
+ "networkTimeout": {
+  "request": 5000,
+  "downloadFile": 5000
+},
+"permission": {
+  "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序定位"
+  }
+},
+"sitemapLocation": "sitemap.json"
+}
